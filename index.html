@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta title="faceday">
+		<style type="text/css">
+		
+		#content{
+			width:600px;
+			margin:50px auto;
+			font-family: Helvetica, Arial;	
+			text-align: center;		
+		}
+		#bookmarklet{
+			display:block;
+			width:200px;
+			height:40px;		
+			margin:0 auto 30px auto;
+			border-radius: 10px;
+			padding-top:20px;
+			background: #31dfff;
+			color:#fff;
+		}
+		a{
+			color:#31dfff;
+			text-decoration: none;
+		}
+		#logo{
+			width:100px;
+			margin:0 auto;
+			display:block;
+			margin-top:30px;
+		}
+		#small{
+			font-size: 11px;
+			margin-top:30px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<a id="bookmarklet" href="javascript:(function() {var days = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];Date.prototype.getDayName = function() {return days[ this.getDay() ];};})();var now = new Date();var day = now.getDayName();window.location='http://facespac.es/c/'+ day;">faceday!</a>
+			<p>Faceday takes you to the <a href="http://facespac.es">facespac.es</a> channel for the day of the week!<br/>Drag faceday to your bookmarks bar and click it every day at midnight and beyond!</p>
+			<a href="http://facespa.ces"><img src="facespaces-logo.png" id="logo"/></a>
+			<p id="small">faceday is brought to you by<br/><a href="http://twitter.com/lauradegroot">@lauradegroot</a> and hosted by <a href="http://twitter.com/taotetek">@taotetek</a></p>
+		</div>
+	</body>
+</html>
